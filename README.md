@@ -1,6 +1,6 @@
 # colonizer
 
-Command-line tool that lets you register a package on PyPi or npm before you have any code ready. Yes, this is a terrible idea. And yes, it's potentially damaging to the OSS ecosystem. Using this might make you a bad person.
+Command-line tool that lets you register a package on PyPi or npm before you have any code ready. Yes, this is a terrible idea. And yes, it's potentially damaging to the OSS ecosystem. Using this might even make you a bad person.
 
 ## Installation
 
