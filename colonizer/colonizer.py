@@ -4,8 +4,8 @@ import argparse
 from subprocess import check_output
 
 # Local
-from pypi import claim_pypi_package
-from npm import claim_npm_package
+from colonizer.pypi import claim_pypi_package
+from colonizer.npm import claim_npm_package
 
 
 #########

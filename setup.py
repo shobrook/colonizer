@@ -14,8 +14,8 @@ with open("README.md", encoding="utf-8") as file:
 
 setup(
     name="colonizer",
-    version="1.0.0a1",
-    description="A terribly evil tool for bad people",
+    version="1.0.4",
+    description="A terrible tool for bad people",
     url="https://github.com/shobrook/colonizer",
     author="shobrook",
     author_email="shobrookj@gmail.com",

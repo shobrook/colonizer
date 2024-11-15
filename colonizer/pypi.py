@@ -14,11 +14,11 @@ def create_setup_py(package_name: str, author: str, author_email: str) -> str:
 from setuptools import setup
 
 setup(
-    name='{package_name}',
-    description='{package_name}',
-    version='0.0.1',
-    author={author},
-    author_email={author_email}
+    name=\"{package_name}\",
+    description=\"{package_name}\",
+    version=\"0.0.1\",
+    author=\"{author}\",
+    author_email=\"{author_email}\"
 )
 """
 
@@ -38,7 +38,8 @@ def create_package(package_name: str, author: str, author_email: str) -> str:
         f.write(create_setup_py(package_name, author, author_email))
 
     # Build the package
-    check_call([sys.executable, "setup.py", "sdist"], cwd=temp_dir)
+    x = check_call([sys.executable, "setup.py", "sdist"], cwd=temp_dir)
+    print(x)
 
     return temp_dir
 
@@ -52,6 +53,6 @@ def upload_package(package_dir: str):
 ######
 
 
-def claim_pypi_package(package_name: str):
-    package_dir = create_package(package_name)
+def claim_pypi_package(package_name: str, author: str, author_email: str):
+    package_dir = create_package(package_name, author, author_email)
     upload_package(package_dir)
